@@ -1,0 +1,121 @@
+/* font-family: "Prata", serif;
+font-family: "Inter", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h3{
+    flex: 1;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.movie{
+    color: #24282E;
+    font-family: "Inter", sans-serif;
+}
+
+#poster{
+    filter: grayscale(100%);
+    mix-blend-mode:hard-light;
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 350px;
+}
+
+#noise{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(colorSpheres.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+
+header .container{
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+    
+}
+
+header button{
+    width: 50px;
+    height: 50px;
+    background-image: url("arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat ;
+    border: none;
+    background-color: transparent;
+}
+
+h1{
+    font-family: "Prata", serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+span{
+    margin-top: 15px ;
+    margin-bottom: 30px;
+    display: block;
+    opacity: .5;
+    width: 18px;
+    height: 18px;
+    background-image: url('star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+.star{
+    opacity: 1;
+}
+
+p{
+    gap: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#swinfo{
+    color: #767676;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.buy{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #24282E;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+
+.buy img{
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-45%);
+}
