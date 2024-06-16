@@ -25,7 +25,7 @@ function Movie() {
             <span></span>
           </p>
           <p id="swinfo">The Star Wars Trilogy Special Edition was a theatrical anniversary edition of the original trilogy, in order to celebrate the 20th anniversary of the release of Star Wars: Episode IV A New Hope.</p>
-      <NavLink className={"buy"} to = "/booking">buy ticket <img src={line} alt="" /></NavLink>
+      <NavLink className={"buy"} to = "/booking">buy ticket <div className="mask1"><div className="colour"> </div></div> </NavLink>
       </div>
     </div>
   );

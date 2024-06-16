@@ -2,44 +2,45 @@
 font-family: "Inter", sans-serif; */
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     text-align: center;
 }
 
-h3{
+h3 {
     flex: 1;
     padding-right: 50px;
     text-align: center;
+    font-size: 24px;
 }
 
-.movie{
+.movie {
     color: #24282E;
     font-family: "Inter", sans-serif;
 }
 
-#poster{
+#poster {
     filter: grayscale(100%);
-    mix-blend-mode:hard-light;
+    mix-blend-mode: hard-light;
     margin: auto;
     display: block;
     width: 90%;
     max-width: 350px;
 }
 
-#noise{
+#noise {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     background-image: url(colorSpheres.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -48,32 +49,32 @@ body{
     padding-bottom: 100px;
 }
 
-header .container{
+header .container {
     display: flex;
-    margin: 30px auto;
+    margin: 60px auto;
     align-items: center;
-    
+
 }
 
-header button{
+header button {
     width: 50px;
     height: 50px;
     background-image: url("arrow.svg");
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     border: none;
     background-color: transparent;
 }
 
-h1{
+h1 {
     font-family: "Prata", serif;
     margin-top: 40px;
     margin-bottom: 20px;
-    
+
 }
 
-span{
-    margin-top: 15px ;
+span {
+    margin-top: 15px;
     margin-bottom: 30px;
     display: block;
     opacity: .5;
@@ -85,24 +86,24 @@ span{
     background-size: 18px;
 }
 
-.star{
+.star {
     opacity: 1;
 }
 
-p{
+p {
     gap: 3px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#swinfo{
+#swinfo {
     color: #767676;
     margin-bottom: 25px;
     text-align: left;
 }
 
-.buy{
+.buy {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -111,11 +112,39 @@ p{
     display: block;
     font-weight: 600;
     position: relative;
+    display: inline-block;
 }
 
-.buy img{
+.buy img {
     position: absolute;
     bottom: -18px;
     left: 50%;
     transform: translateX(-45%);
+    background-color: aqua;
+}
+
+.colour {
+    background-color: #FA6218;
+    height: 20px;
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+.mask1 {
+    -webkit-mask-image: url(line.svg);
+    mask-image: url(line.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+}
+
+.buy:hover  .colour{
+    transform: none;
+
+}
+
+@media (max-width:600px){
+    .colour{
+        transform: none;
+    }
 }

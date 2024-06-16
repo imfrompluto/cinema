@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1E2129;
+    background-image: none;
+}
+
+h3{
+    padding: 0;
+    color: #E4DCD3;
+
+}
+
+#calendar{
+    background-image: url(calendar.svg);
+    background-position: center;
+}
+
+#arrow{
+    filter: invert(100%);
+}
+
+#screen{
+    width: 70%;
+}
+
+.seats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: calc(28px * 9 + 8px * 8);
+    margin: auto;
+}
+
+.seat{
+    width: 28px;
+    height: 28px;
+    background-color: #353B44;
+    border-radius: 3px 3px 0px 0;
+    transition: .3s;
+}
+
+.seat:hover{
+    background-color: #fa8a53b9;
+    cursor: pointer;
+}
+
+.seat:first-child{
+    margin-left: calc((100% - (28px * 4 + 8px * 3)) / 2);
+}
+
+.seat:nth-child(4){
+    margin-right: calc((100% - (28px * 4 + 8px * 3)) / 2);
+}
+
+.seat:nth-child(41){
+    margin-left: calc((100% - (28px * 5 + 8px * 4)) / 2);
+}
+
+.seat:last-child{
+    margin-right: calc((100% - (28px * 5 + 8px * 4)) / 2);
+}
+
+
+.reserved{
+    background-color: #F2E3C9;
+}
+
+
+
+.status{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding-top: 36px ;
+    padding-bottom: 48px;
+}
+
+.status p{
+    color: #E4DCD3;
+    text-transform: capitalize;
+}
+
+.status span{
+    margin: 0;
+    background-image: none;
+    opacity: 1;
+    font-size: 40px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #3D434D;
+}
+
+
+#orange{
+    color: #FA6218;
+}
+
+#white{
+    color: #F2E3C9;
+}
+
+
+.time{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.time button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: #F2E5D7 1px solid;
+    color: #F2E5D7;
+    background-color: transparent;
+}
+
+
+.buttons button{
+    margin-top: 64px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #F2E3C9;
+    height: 54px;
+    color: #24282E;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: transparent;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.buttons button:hover{
+    background-color: #ff8244;
+    box-shadow: 0 0 20px #ff7936;
+    border: 1px solid #F2E3C9;
+    color: #F2E3C9;
+    cursor: pointer;
+}
+
+.cancel{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.booking a{
+    color: #F2E5D7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.booking a:hover{
+    opacity: .5;
+}
